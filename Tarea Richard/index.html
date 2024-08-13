@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoAddicts - Inicio</title>
+    <link rel="stylesheet" href="tarea.css">
+</head>
+<body>
+
+<header>
+    <h1>TechnoAddicts</h1>
+    <p>La tienda de tecnología que estabas esperando</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="delivery.html">Servicio Delivery</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<section id="banner">
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/banner.png" alt="Banner 1" class="carousel-image">
+            <img src="img/celulares.jpg" alt="Banner 2" class="carousel-image">
+        </div>
+    </div>
+</section>
+
+<section id="quienes-somos">
+    <h2>Quiénes Somos</h2>
+    <p>Bienvenido a TechnoAddicts, tu tienda de confianza para adquirir los mejores celulares del mercado. Nos especializamos en ofrecer productos de alta calidad de marcas reconocidas como iPhone, Xiaomi y Samsung. Ubicados en Santiago de Surco, brindamos un servicio excepcional y atención personalizada a nuestros clientes.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 TechnoAddicts. Todos los derechos reservados.</p>
+    <p><a href="contacto.html">Contáctanos</a> | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="terminos-condiciones.html">Términos y Condiciones</a></p>
+</footer>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.carousel-image');
+const totalSlides = slides.length;
+
+function showSlides() {
+    if (slideIndex >= totalSlides) { slideIndex = 0; }
+    if (slideIndex < 0) { slideIndex = totalSlides - 1; }
+
+    document.querySelector('.carousel-images').style.transform = `translateX(-${slideIndex * 100}%)`;
+
+    slideIndex++;
+    setTimeout(showSlides, 5000);
+}
+
+showSlides();
+</script>
+
+</body>
+</html>

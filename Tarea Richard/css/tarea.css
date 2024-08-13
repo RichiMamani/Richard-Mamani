@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+    /* Estilo para centrar la imagen */
+    .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #00ccff;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #00ccff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #00ccff;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.product {
+    text-align: center;
+}
+/* se coloca un estilo de imagenes para poder centrar, bordear y darle un tamaño considerable para catalogo*/
+.product img {
+    width: 500px;
+    height: auto;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+    margin: 10px 0;
+}
